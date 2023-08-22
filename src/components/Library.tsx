@@ -1,6 +1,7 @@
 'use client';
 import { FC } from 'react';
-import { TbPlaylist } from 'react-icons/tb';
+// import { TbPlaylist } from 'react-icons/tb';
+import LibraryIcon from './LibraryIcon';
 import { AiOutlinePlus } from 'react-icons/ai';
 import useAuthModal from '@/hooks/useAuthModal';
 import { useUser } from '@/hooks/useUser';
@@ -31,7 +32,8 @@ const Library: FC<LibraryProps> = ({ songs }) => {
         <div className="flex flex-col">
             <div className="flex items-center justify-between px-5 pt-4">
                 <div className="inline-flex items-center gap-x-2">
-                    <TbPlaylist className="text-neutral-400" size={26} />
+                    {/* <TbPlaylist className="text-neutral-400" size={26} /> */}
+                    <LibraryIcon/>
                     <p className="text-neutral-400 font-medium text-md">
                         Your Library
                     </p>
